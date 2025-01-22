@@ -8,17 +8,58 @@
 }
 
 .end{
-    float: right
+    float: right;
 }
 
 .clearfloat{
     clear: both;
 }
 
+.top_margin{
+    margin-top: 2%;
+}
+
+.content{
+    align-content: center;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+.sided{ 
+    width: 12%;
+}
+
+.grid{
+    display: inline;
+}
+
+.consecutive{
+    vertical-align: top;
+    padding: 10px 0px;
+    display: inline;
+}
+
+.linked{
+    text-decoration-line: underline;
+    color: blue
+}
+
 #header{
     margin: auto;
-    margin-bottom: 2%;
-    width: 80%;
+    margin-bottom: 1%;
+    width: 95%;
     align-content: center;
-    
+}
+
+#body{
+    width: 95%;
+    margin: auto;
+    align-content: center;
+}
+
+#footer{
+    width: 95%;
+    margin-top: 3%;
+    margin: auto;
+    align-content: center;
 }
