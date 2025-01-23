@@ -1,6 +1,7 @@
 .border{
     border-style: solid;
     border-width: 2px;
+    overflow-wrap: anywhere;
 }
 
 .start{
@@ -19,16 +20,20 @@
     margin-top: 2%;
 }
 
+.top_margin_high{
+    margin-top: 8%;
+}
+
+.left_margin{
+    margin-left: 3%; 
+}
+
 .margin_bottom{
     margin-bottom: 2%;
 }
 
 .content{
-    width: 86%;
-}
-
-.sided{ 
-    width: 12%;
+    width: 84%;
 }
 
 .grid{
@@ -46,11 +51,30 @@
     color: blue
 }
 
+.padding{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.no_margin{
+    margin: 0;
+}
+
+.medium_image{
+    width: 14%;
+    height: 14%;
+    padding-right: 3%;
+}
+
 #header{
     margin: auto;
     margin-bottom: 1%;
     width: 95%;
     align-content: center;
+}
+
+#logotipo{
+    padding-left: 3mm;
 }
 
 #body{
@@ -59,9 +83,21 @@
     align-content: center;
 }
 
+#left_body{
+    width: 15%;
+}
+
+#right_body{
+    width: 13%;
+}
+
 #footer{
     width: 95%;
-    margin-top: 3%;
     margin: auto;
+    margin-top: 1%;
     align-content: center;
+}
+
+#media{
+    margin-top: 1%;
 }
