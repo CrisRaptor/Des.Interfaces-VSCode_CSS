@@ -19,10 +19,12 @@
     margin-top: 2%;
 }
 
+.margin_bottom{
+    margin-bottom: 2%;
+}
+
 .content{
-    align-content: center;
-    margin-left: 13%;
-    margin-right: 13%;
+    width: 86%;
 }
 
 .sided{ 
