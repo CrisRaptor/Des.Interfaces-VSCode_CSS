@@ -17,7 +17,7 @@
 }
 
 .top_margin{
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .top_margin_high{
@@ -25,7 +25,11 @@
 }
 
 .left_margin{
-    margin-left: 3%; 
+    margin-left: 1%; 
+}
+
+.right_margin{
+    margin-right: 1%;
 }
 
 .margin_bottom{
@@ -61,9 +65,9 @@
 }
 
 .medium_image{
-    width: 14%;
-    height: 14%;
-    padding-right: 3%;
+    width: 12%;
+    height: 12%;
+    padding-right: 1%;
 }
 
 #header{
@@ -87,8 +91,12 @@
     width: 15%;
 }
 
+#mid_body{
+    width: 83%;
+}
+
 #right_body{
-    width: 13%;
+    width: 15%;
 }
 
 #footer{
