@@ -46,7 +46,6 @@ h6 {
 #presentation {
     background-color: #ecedf2;
     padding: 20px 10% 0 10%;
-    flex-direction: row;
     justify-content: space-between;
 }
 
