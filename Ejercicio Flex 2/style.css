@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+img {
+    width: 400px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.spread {
+    justify-content: space-between;
+}
+
+#start{
+    background-image: url("images/showcase.jpg");
+}
+
+#nav_bar {
+    top: 0;
+    margin: auto;
+    width: 1300px;
+    justify-content: space-between;
+}
+
+#nav_bar .caps {
+    font-size: 20px;
+    margin: 0;
+}
+
+#menu {
+    gap: 20px;
+}
+
+#presentation {
+    padding: 20px 10% 2% 10%;
+    justify-content: center;
+}
+
+#pictures {
+    padding: 20px 10% 0 10%;
+    gap: 5%;
+    justify-content: center;
+}
+
+#pictures img {
+    width: 25%;
+}
+
+#quote {
+    padding: 20px 10% 5px 10%;
+    justify-content: space-between;
+    background-image: url("images/feature.jpg");
+}
+
+#data {
+    padding: 20px 10% 0 10%;
+    justify-content: space-between;
+}
+
+#picture {
+    padding: 20px 10% 0 10%;
+    justify-content: space-between;
+}
+
+#sections {
+    background-image: url("images/background-2.jpg");
+}
+
+#perserverance {
+    padding: 20px 10% 0 10%;
+    justify-content: space-between;
+}
+
+#missions {
+    padding: 20px 10% 0 10%;
+    justify-content: space-between;
+}
+
+#end {
+    background-image: url("images/background-3.jpg");
+}
+
+#future {
+    padding: 20px 10% 0 10%;
+    justify-content: space-between;
+}
+
+#footer {
+    padding: 20px 10% 0 10%;
+    justify-content: space-between;
+}
