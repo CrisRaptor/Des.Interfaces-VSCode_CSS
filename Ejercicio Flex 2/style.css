@@ -5,11 +5,16 @@ body {
 }
 
 img {
-    width: 400px;
+    width: 300px;
 }
 
 h4 {
     margin: 0;
+}
+
+h2 {
+    margin: 0;
+    margin-top: 15px;
 }
 
 .flex-container-column {
@@ -37,14 +42,37 @@ h4 {
     justify-content: space-between;
 }
 
+.img_gallery_3 {
+    width: 250px;
+    height: 150px;
+    align-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.padding_left{
+    padding-left: 5%;
+}
+
+.padding_right{
+    padding-right: 5%;
+}
+
+#small_picture{
+    margin: 5% 15% 5% 15%;
+}
+
 #start{
     background-image: url("images/showcase.jpg");
+    background-size: cover;
 }
 
 #nav_bar {
     top: 0;
     margin: auto;
-    width: 1300px;
+    width: 70%;
     justify-content: space-between;
 }
 
@@ -58,60 +86,70 @@ h4 {
 }
 
 #presentation {
-    padding: 20px 10% 2% 10%;
-    justify-content: center;
+    padding: 20px 15% 2% 15%;
+    justify-content: space-between;
+}
+
+#text{
+    padding-right: 30%;
+    align-items: start;
 }
 
 #pictures {
-    padding: 20px 10% 0 10%;
-    gap: 5%;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between; 
 }
 
-#pictures img {
-    width: 25%;
+#perseverance_picture{
+    background-image: url("images/perseverance.jpg");
+}
+
+#missions_picture{
+    background-image: url("images/missions-1.png");
+}
+
+#future_picture{
+    background-image: url("images/future.jpg");
 }
 
 #quote {
-    padding: 20px 10% 5px 10%;
+    padding: 5% 15% 5% 15%;
+    font-size: 15pt;
     justify-content: space-between;
     background-image: url("images/feature.jpg");
+    background-size: cover;
 }
 
 #data {
-    padding: 20px 10% 0 10%;
-    justify-content: space-between;
-}
-
-#picture {
-    padding: 20px 10% 0 10%;
     justify-content: space-between;
 }
 
 #sections {
+    padding: 2% 15% 2% 15%;
     background-image: url("images/background-2.jpg");
+    background-size:  cover;
 }
 
 #perserverance {
-    padding: 20px 10% 0 10%;
     justify-content: space-between;
 }
 
 #missions {
-    padding: 20px 10% 0 10%;
     justify-content: space-between;
 }
 
 #end {
     background-image: url("images/background-3.jpg");
+    background-size: cover;
 }
 
 #future {
-    padding: 20px 10% 0 10%;
+    padding: 20px 25% 0 25%;
     justify-content: space-between;
 }
 
 #footer {
-    padding: 20px 10% 0 10%;
+    text-align: center;
+    padding: 20px 15% 2% 15%;
     justify-content: space-between;
 }
