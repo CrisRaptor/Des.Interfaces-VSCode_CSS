@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Examen FLEX</title>
+</head>
+<body>
+    <div id="container">
+        <div id="section1" class="flex-container background_showcase">
+            <div id="header" class="flex-container-row content">
+                <h1 id="logo">Valentine</h1>
+                <div id="nav_bar">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="pages/yes-dinner.html">Dinner</a></p>
+                    <p><a href="pages/yes-gift.html">Gift</a></p>
+                    <p><a href="pages/yes-show.html ">Show</a></p>
+                </div>
+            </div>
+            <div id="presentation" class="flex-container content">
+                <h2 class="title">Happy Valentine's Day</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum exercitationem delectus similique quam alias impedit aperiam.</p>
+                <a href="#section2"><button id="btn_presentation" class="border red_background top_margin">Be my Valentine</button></a>
+            </div>
+        </div>
+        <div id="section2" class="flex-container">
+            <div id="proposal" class="flex-container-row content">
+                <h2 class="title">Will you be my Valentine?</h2>
+                <div id="election" class="flex-container-row">
+                    <a href="#section3"><button class="red_border red_background">Yes</button></a>
+                    <a href="pages/no.html"><button class="border no_background">No</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3" class="flex-container">
+            <div id="gift" class="flex-container-row content">
+                <div class="picture_option flex-container">
+                    <img src="images/yes-dinner.jpg" alt="dinner">
+                    <a href="pages/yes-dinner.html"><button id="btn_dinner" class="red_border red_background caps top_margin">Dinner</button></a>
+                </div>
+                <div class="picture_option flex-container">
+                    <img src="images/yes-gift.jpg" alt="gift">
+                    <a href="pages/yes-gift.html"><button id="btn_gift" class="red_border red_background caps top_margin">Gift</button></a>
+                </div>
+                <div class="picture_option flex-container">
+                    <img src="images/yes-show.jpg" alt="Show">
+                    <a href="pages/yes-show.html"><button id="btn_show" class="red_border red_background caps top_margin">Show</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="section4" class="dark_red_background">
+            <div id="footer">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

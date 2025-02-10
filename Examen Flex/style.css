@@ -1,0 +1,252 @@
+/* Paleta A3000D (Rojo oscuro), DD2E0D (Rojo) FFFFFF (Blanco), 000000 (Negro)*/
+/* Fuentes: Montserrat, Dancing Script*/
+
+/* Elementos */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: "Montserrat", serif;
+    font-size: small;
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: large;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0 0 0;
+}
+
+img{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 20px;
+    color: #FFFFFF;
+    padding: 5px 40px;
+}
+
+/* Ids */
+
+#logo{
+    font-family: 'Dancing Script', cursive;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#section1{
+    width: 100%;
+}
+
+#section1_yes{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#presentation{
+    margin: 5% auto;
+}
+
+#presentation p{
+    padding: 0 10%;
+    text-align: center;
+}
+
+#presentation .title{
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+#section2{
+    background-color: #A3000D;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#nav_bar{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#proposal{
+    width: 100%;
+    justify-content: space-around;
+    margin: 2% auto;
+}
+
+#election{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    gap: 20px;
+}
+
+#section3{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 30px 0;
+    justify-content: space-around;
+}
+
+#gift{
+    gap: 5px;
+}
+
+#section4{
+    width: 100%;
+    height: 40px;
+}
+
+
+#no_response{
+    background-image: url('images/no.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    align-items: baseline;
+}
+
+#section_no_response{
+    width: 100%;
+}
+
+#description{
+    color: #000000;
+}
+
+#response{
+    justify-content: space-around;
+}
+
+#picture_election{
+    max-width: 350px;
+    max-height: 350px;
+    width: 40%;
+}
+
+#description{
+    width: 55%;
+}
+
+
+/* Clases */
+
+/*Estilos contenedores*/
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-container-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content{
+    width: 80%;
+    max-width: 1100px;
+}
+
+/*Estilos botones*/
+.border {
+    border: 2px solid #FFFFFF;
+}
+
+.red_border {
+    border: 2px solid #DD2E0D;
+}
+
+.dark_red_background {
+    background-color: #A3000D;
+}
+
+/*Estilos de fondos*/
+.background_showcase{
+    background-image: url('images/showcase.jpg');
+    background-size: cover;
+}
+
+.red_background {
+    background-color: #DD2E0D;
+}
+
+.no_background {
+    background-color: transparent;
+}
+
+.white_background {
+    background-color: #FFFFFF;
+}
+
+/*Otros estilos*/
+.top_margin{
+    margin-top: 20px;
+}
+
+.caps{
+    text-transform: uppercase;
+}
+
+.title{
+    font-weight: 300;
+    font-size: x-large;
+}
+
+.full_height{
+    height: 100%;
+}
+
+
+.full_content{
+    width: 100%;
+    height: 100%;
+    align-items: baseline;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .flex-container-row{
+        flex-direction: column;
+    }
+}
