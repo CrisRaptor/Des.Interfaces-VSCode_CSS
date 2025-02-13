@@ -1,5 +1,7 @@
 /*Paleta de colores: 585858 F6F6F6 FFFFFF*/
 
+/* ESTILOS */
+/*Elementos*/
 body {
     width: 100%;
     font-family: "Source Sans 3", serif;
@@ -13,6 +15,7 @@ textarea{
 
 button {
     cursor: pointer;
+    display: block;
     border-radius: 5px;
     color: #FFFFFF;
     padding: 5px 40px;
@@ -42,6 +45,7 @@ button, h1, h3{
     font-weight: 800;
 }
 
+/*Ids*/
 #container{
     width: 80%;
     max-width: 1100px;
@@ -75,10 +79,6 @@ button, h1, h3{
 #photo2{
     background-image: url('images/image-2.jpg');
     color: #000;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
 
 #photo3{
@@ -93,19 +93,11 @@ button, h1, h3{
 #photo4{
     background-image: url('images/image-4.jpg');
     color: #000;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
 }
 
 #photo5{
     background-image: url('images/image-5.jpg');
     color: #ffffff;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
 }
 
 #section3 {
@@ -118,6 +110,24 @@ button, h1, h3{
     margin: 0 auto;
 }
 
+#footer.grid-container-2x1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+#message{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#follow{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/*Clases*/
 .content {
     width: 100%;
     max-width: 1100px;
@@ -148,10 +158,10 @@ button, h1, h3{
     gap: 10px;
 }
 
-#footer.grid-container-2x1{
+.grid-container-2x2{
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px
 }
 
@@ -185,4 +195,84 @@ button, h1, h3{
 
 .icon {
     margin: 0 10px;
+}
+
+/* Media Queries */
+/*Formato tablet y formato móvil*/
+@media (max-width: 768px) {
+    /*Elementos*/
+    input {
+        width: 100%;
+    }
+    
+    /*Ids*/
+    #presentation{
+        width: 100%;
+    }
+
+    #footer.grid-container-2x1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px
+    }
+
+    /*Clases*/
+    .grid-container-2x1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px
+    }
+}
+
+/*Formato móvil*/
+@media (max-width: 480px) {
+    /*Elementos*/
+    body {
+        margin: 0;
+    }
+
+    /*Ids*/
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px
+    }
+
+    #photo1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #photo2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #photo3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #photo4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    #photo5{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
 }
