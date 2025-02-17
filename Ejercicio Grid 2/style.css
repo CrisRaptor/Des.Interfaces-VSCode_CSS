@@ -1,0 +1,103 @@
+/*Paleta de colores: E3FBF2 58BE8E FFFFFF 000000*/
+/*Tipografía: https://fonts.google.com/specimen/Titillium+Web*/
+
+body {
+    width: 100%;
+    font-family: "Titillium Web", serif;
+    font-size: large;
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+}
+
+button{
+    background-color: #ffffff;
+    color: #58BE8E;
+    border: none;   
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#container{
+    width: 100%;
+}
+
+#section1{
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+#presentation{
+    width: 30%;
+}
+
+#gallery{
+    width: 80%;
+    padding: 5vh 0;
+}
+
+.grid-container-4x4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.background_white{
+    background-color: #ffffff;
+}
+
+.background_dark_green{
+    background-color: #58BE8E;
+}
+
+.background_green{
+    background-color: #E3FBF2;
+}
+
+.center{
+    align-content: center;
+    text-align: center;
+}
+
+.grid-span-2x1{
+    grid-column: span 2;
+}
+
+.grid-span-1x2{
+    grid-row: span 2;
+}
+
+.grid-item{
+    padding: 20px;
+    border-radius: 15px;
+}
+
+@Media (max-width: 768px){
+    #presentation{
+        width: 90%;
+    }
+
+    .grid-container-4x4{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-span-1x2{
+        grid-row: auto;
+    }
+
+    .grid-span-2x1{
+        grid-column: auto;
+    }
+}
