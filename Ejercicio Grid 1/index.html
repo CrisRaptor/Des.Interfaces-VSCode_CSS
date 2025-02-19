@@ -11,45 +11,40 @@
     <title>Ejercicio Grid 1</title>
 </head>
 <body>
-    <div id="container">
-        <div id="section1" class="background_showcase">
-            <div id="header" class="content">
-                <img src="images/logo.png" alt="logo" id="logo">
-            </div>
-            <div id="presentation" class="content">
-                <h1 class="title">This is a landing page to practice CSS Grid based on the Phantom Template</h1>
-                <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum exercitationem delectus similique quam alias impedit aperiam.</p>
-            </div>
-        </div>
-        <div id="section2">
-            <div id="gallery" class="content grid-container-3x3">
-                <div id="photo1" class="grid-item cover_background center">
-                    <h2 class="caps title">MAGNA</h2>
-                    <p id="magna_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam optio impedit temporibus provident pariatur eos dolore enim nisi numquam, quasi sit ut, accusamus accusantium.</p>
-                </div>
-                <div id="photo2" class="grid-item cover_background center">
-                    <h2 class="caps title">LOREM</h2>
-                </div>
-                <div id="photo3" class="grid-item cover_background center">
-                    <h2 class="caps title">VENENATIS</h2>
-                </div>
-                <div id="photo4" class="grid-item cover_background center">
-                    <h2 class="caps title">TEMPU</h2>
-                </div>
-                <div id="photo5" class="grid-item cover_background center">
-                    <h2 class="caps title">FEUGIAT</h2>
-                </div>                
-            </div>
-        </div>
-        
+    <div class="content">
+        <img src="images/logo.png" alt="logo" id="logo">
     </div>
-    <div id="section3">
-        <div id="footer" class="content grid-container-2x1">
+    <div id="presentation" class="content">
+        <h1 class="title">This is a landing page to practice CSS Grid based on the Phantom Template</h1>
+        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum exercitationem delectus similique quam alias impedit aperiam.</p>
+    </div>
+    <div id="section2">
+        <div id="gallery" class="content">
+            <div id="photo1" class="grid-item cover_background center">
+                <h2 class="caps title">MAGNA</h2>
+                <p id="magna_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam optio impedit temporibus provident pariatur eos dolore enim nisi numquam, quasi sit ut, accusamus accusantium.</p>
+            </div>
+            <div id="photo2" class="grid-item cover_background center">
+                <h2 class="caps title">LOREM</h2>
+            </div>
+            <div id="photo3" class="grid-item cover_background center">
+                <h2 class="caps title">VENENATIS</h2>
+            </div>
+            <div id="photo4" class="grid-item cover_background center">
+                <h2 class="caps title">TEMPU</h2>
+            </div>
+            <div id="photo5" class="grid-item cover_background center">
+                <h2 class="caps title">FEUGIAT</h2>
+            </div>                
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-content" class="content">
             <div>
                 <h3 class="title caps">Get in touch</h3>
-                <div class="grid-container-2x2">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
+                <div id="contact" class="grid-container-2x2">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="email" placeholder="Email" id="email">
                     <input type="text" placeholder="Message" id="message">
                 </div>
                 <button class="button caps">Send</button>

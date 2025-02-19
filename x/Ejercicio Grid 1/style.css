@@ -7,8 +7,10 @@ body {
     font-family: "Source Sans 3", serif;
     font-size: large;
     color: #585858;
-    margin: 0 auto;
-    padding-top: 30px;
+}
+
+textarea{
+    display: block;
 }
 
 button {
@@ -44,6 +46,12 @@ button, h1, h3{
 }
 
 /*Ids*/
+#container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
 #media span{
     width: 36px;
     height: 36px;
@@ -55,8 +63,8 @@ button, h1, h3{
     height: 30px;
 }
 
-#presentation h1, #presentation p {
-    padding-right: 20%;
+#presentation {
+    width: 80%;
 }
 
 #photo1{
@@ -64,6 +72,8 @@ button, h1, h3{
     color: #000;
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 #photo2{
@@ -90,34 +100,21 @@ button, h1, h3{
     color: #ffffff;
 }
 
-#section2 {
-    margin-bottom: 20px;
-}
-
-#gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
-}
-
-#footer{
+#section3 {
     background-color: #F6F6F6;
     padding-top: 10px;
 }
 
-#footer-content{
+#footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#footer.grid-container-2x1 {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 1fr;
     gap: 10px;
-}
-
-#contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px
 }
 
 #message{
@@ -132,8 +129,8 @@ button, h1, h3{
 
 /*Clases*/
 .content {
+    width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
 }
 
 .cover_background{
@@ -145,6 +142,27 @@ button, h1, h3{
 .center{
     align-content: center;
     text-align: center;
+}
+
+.grid-container-3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-container-2x1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.grid-container-2x2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px
 }
 
 .grid-item {
@@ -180,65 +198,81 @@ button, h1, h3{
 }
 
 /* Media Queries */
-/*Formato de ancho menor al max width*/
-@media (max-width: 1100px){
-    /*Elementos*/
-    body{
-        padding: 30px 15px 0 15px;
-        width: calc(100% - 30px);
-    }
-}
-
 /*Formato tablet y formato móvil*/
 @media (max-width: 768px) {
     /*Elementos*/
-    body{
-        padding: 0 10px;
-        width: calc(100% - 20px);
+    input {
+        width: 100%;
     }
     
     /*Ids*/
-    #presentation h1, #presentation p {
-        padding-right: 0;
+    #presentation{
+        width: 100%;
     }
 
-    #footer-content{
-        display: block;
-    }
-
-    #message{
-        grid-column-start: 1;
-        grid-column-end: 2;
+    #footer.grid-container-2x1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px
     }
 
     /*Clases*/
-    #contact{
+    .grid-container-2x1{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
         gap: 10px
     }
 }
 
 /*Formato móvil*/
 @media (max-width: 480px) {
+    /*Elementos*/
+    body {
+        margin: 0;
+    }
+
     /*Ids*/
     #gallery{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         gap: 10px
     }
 
     #photo1{
         grid-column-start: 1;
         grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #photo2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
     #photo3{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #photo4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
         grid-row-end: 5;
+    }
+
+    #photo5{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
 }
