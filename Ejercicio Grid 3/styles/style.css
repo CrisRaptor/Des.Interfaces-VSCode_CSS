@@ -78,24 +78,22 @@ a{
     gap: 10px;
 }
 
-#gallery_category{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
 #routes{
     margin: 5px auto;
 }
 
-#details{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
+#footer{
+    background-color: #f6f6f6;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 15px;
 }
 
-#product_links i{
-    margin: 0 20px;
+/*IDs paginas navbar*/
+#gallery_category{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 #about_head{
@@ -117,11 +115,15 @@ a{
     font-size: small;
 }
 
-#footer{
-    background-color: #f6f6f6;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 15px;
+/*IDs Details*/
+#details{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+#product_links i{
+    margin: 0 20px;
 }
 
 @Media (max-width: 768px){
