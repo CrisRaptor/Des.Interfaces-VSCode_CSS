@@ -84,11 +84,6 @@ a{
     gap: 10px;
 }
 
-#gallery_category.grid-item{
-    width: 70vh;
-    height: auto;
-}
-
 #routes{
     margin: 5px auto;
 }
@@ -99,7 +94,7 @@ a{
     gap: 10px;
 }
 
-#product_links a{
+#product_links i{
     margin: 0 20px;
 }
 
@@ -148,7 +143,12 @@ a{
         align-items: center;
     }
 
-    #gallery{
+    #gallery, #about_description, #details{
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #about_text_1{
+        margin: 0 auto;
     }
 }
