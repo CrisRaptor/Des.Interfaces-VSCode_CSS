@@ -10,6 +10,10 @@ body {
     grid-template-rows: 1fr auto;
 }
 
+h2{
+    font-weight: 100;
+}
+
 img{
     width: 100%;
     height: 100%;
@@ -24,12 +28,6 @@ a{
 .content {
     max-width: 900px;
     margin: 0 auto;
-}
-
-.cover_background{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .center {
@@ -68,7 +66,8 @@ a{
     max-width: 600px;
     margin: 10px auto;
     border: 5px solid #585858;
-    padding: 5 15px;
+    margin: 20px auto;
+    padding: 5px 15px;
     font-weight: 100;
 }
 
@@ -88,6 +87,20 @@ a{
 #gallery_category.grid-item{
     width: 70vh;
     height: auto;
+}
+
+#routes{
+    margin: 5px auto;
+}
+
+#details{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+#product_links a{
+    margin: 0 20px;
 }
 
 #about_head{
