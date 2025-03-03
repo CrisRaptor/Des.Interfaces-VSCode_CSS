@@ -1,0 +1,257 @@
+/*Elementos*/
+body {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: "Roboto", serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 5px;
+    color: #FFF;
+    border: none;
+    height: 30px;
+    min-width: 120px;
+    max-width: 60%;
+    margin: auto auto;
+}
+
+/*Clases*/
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*Fondos y color*/
+.background-black {
+    background-color: #000;
+    color: #FFF;
+}
+
+.color-white {
+    color: #FFF;
+}
+
+.color-black {
+    color: #000;
+}
+
+.cover-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.separator {
+    min-height: 3px;
+    background-color: #FFF;
+    width: 100%;
+    margin: 10px auto;
+}
+
+/*Formato y alineacion*/
+.caps {
+    text-transform: uppercase;
+}
+
+.center {
+    align-content: center;
+    text-align: center;
+}
+
+.bottom {
+    align-content: end;
+}
+
+
+/*Clases para grid*/
+.span2x1 {
+    grid-column: span 2;
+}
+
+.grid-padding {
+    padding: 20px 30px;
+}
+
+/*Div reutilizados*/
+.arrow-link {
+    margin: 10px auto;
+}
+
+.arrow-link * {
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+}
+
+
+/*Seccion Header*/
+#header {
+    max-width: 900px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 100px;
+    padding: 10px 0;
+}
+
+#logo {
+    max-width: 200px;
+    max-height: 60px;
+}
+
+#nav_bar {
+    max-width: 400px;
+    font-size: medium;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+/*Seccion Presentation*/
+#presentation {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#presentation h2{
+    width: 50%;
+}
+
+#presentation .center {
+    align-content: center;
+    text-align: left;
+}
+
+#presentation img {
+    max-height: 500px;
+    min-height: 200px;
+}
+
+/*Seccion Places*/
+#places {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    color: #FFF;
+}
+
+#places p,h4{
+    margin: 5px 0
+}
+
+#place1,
+#place2,
+#place3,
+#place4 {
+    min-height: 400px;
+}
+
+#place1 {
+    background-image: url('images/stories-mountain.jpg');
+}
+
+#place2 {
+    background-image: url('images/stories-city.jpg');
+}
+
+#place3 {
+    background-image: url('images/stories-voyage.jpg');
+}
+
+#place4 {
+    background-image: url('images/stories-building.jpg');
+}
+
+/*Seccion Features*/
+#features {
+    margin: 40px auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#features img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Media Queries */
+/*Ajuste responsivo para ancho en tablet o inferior*/
+@Media (max-width: 770px) {
+    .content {
+        max-width: 600px;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    #nav_bar {
+        margin: 10px auto;
+        width: 100%;
+        max-width: none;
+    }
+
+    #presentation h2{
+        width: 100%;
+    }
+
+    #presentation img {
+        max-height: none;
+        min-height: 200px;
+    }
+
+    #features .grid-padding {
+        padding: 10px 0;
+    }
+
+    /*Cambios en GRID*/
+    #header {
+        max-width: 300px;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 200px;
+        padding: 20px 0;
+    }
+
+    #presentation {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    #places {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        color: #FFF;
+    }
+
+    #features {
+        margin: 40px auto;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .span2x1 {
+        grid-column: span 1;
+    }
+}
